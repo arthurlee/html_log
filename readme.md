@@ -13,7 +13,7 @@ It is so useful when I was studying the ES6 langauge and trial out the features.
 
 - First, link the web_log.css in your head of the html file.
 ``` html5
-	log('Welcome to html_log');
+	<link type="text/css" href="../src/web_log.css" rel="stylesheet">
 ```
 
 - Second, put these codes in top of your contents of the body element.
