@@ -13,7 +13,7 @@ It is so useful when I was studying the ES6 langauge and trial out the features.
 
 - First, link the web_log.css in your head of the html file.
 ``` html5
-log('Welcome to html_log');
+	log('Welcome to html_log');
 ```
 
 - Second, put these codes in top of your contents of the body element.
@@ -28,7 +28,7 @@ log('Welcome to html_log');
 - Third, call the log function to output the messages whatever you want.
 
 ``` javascript
-log('Welcome to html_log!');
+	log('Welcome to html_log!');
 ```
 
 - That's all. Please see the source code of [scaffold.html](./es6_samples/scaffold.html) for detail.
