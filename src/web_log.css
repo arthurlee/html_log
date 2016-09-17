@@ -1,0 +1,7 @@
+#logger div:nth-child(odd) {
+	background-color: greenyellow;
+}
+
+#logger div:nth-child(even) {
+	background-color: lemonchiffon;
+}

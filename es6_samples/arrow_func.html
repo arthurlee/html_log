@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ES6 arrow function samples</title>
+	<link type="text/css" href="../src/web_log.css" rel="stylesheet">
+	<style>
+		#logger div:nth-child(odd) {
+			background-color: greenyellow;
+		}
+
+		#logger div:nth-child(even) {
+			background-color: lemonchiffon;
+		}
+	</style>
+</head>
+<body>
+	<!-- show log message in the html page instead of console -->
+	<div id="logger"></div>
+	<script type="application/javascript" src="../src/web_log.js"></script>
+	<!-- end -->
+
+	<script type="application/javascript">
+		var evens = [2, 4, 6, 8, 10, 12, 14];
+
+		var odds = evens.map((n) => n + 1);
+		log(odds);
+
+		var nums = evens.map((v, i) => v + i);
+		log(nums);
+
+		var fives = [];
+		// 单个参数的小括号可省略
+		nums.forEach(v => {
+			if (v % 5 === 0) {
+				fives.push(v);
+			}
+		});
+		log(fives);
+
+		// Lexical this
+		var bob = {
+			_name: 'Bob',
+			_friends: ['Tom', 'Jerry', 'Ted'],
+			printFriends() {
+				this._friends.forEach(f => {
+					log(this._name + ' knows ' + f);
+				});
+			}
+		}
+		bob.printFriends();
+
+	</script>
+
+</body>
+
+</html>

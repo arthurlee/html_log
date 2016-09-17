@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scaffold for JSFiddler</title>
+	<link type="text/css" href="../src/web_log.css" rel="stylesheet">
+</head>
+<body>
+	<!-- show log message in the html page instead of console -->
+	<div id="logger"></div>
+	<script type="application/javascript" src="../src/web_log.js"></script>
+	<!-- end -->
+
+	<script type="application/javascript">
+		log('Welcome');
+		log('to study');
+		log('ES6!');
+
+		// array
+		log([1, 2, 3, 4]);
+
+		// object
+		log({a:1, b:'12'});
+
+		// more
+		log([2, 4, 6, 8, 10]);
+		log([2, 4, 6, {a:1, b:2}, 10]);
+
+		log({a:1, b:2});
+		log({a:1, b: {cc:3, dd:4}, e: ['one', 'two', 'three']});
+
+	</script>
+
+</body>
+
+</html>
